@@ -60,8 +60,18 @@ export default function Header() {
                     className={({ isActive }) =>
                         isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                     }>Favoritos</NavLink>
-            </nav>
-        </div>
+                <NavLink
+                    to="/app"
+                    className={({ isActive }) =>
+                         isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
+                    }> App </NavLink>
+                    <NavLink
+                    to="/use"
+                    className={({ isActive }) =>
+                         isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
+                    }> Modo de uso </NavLink>
+             </nav>
+            </div>
 
         {isHome && (
             <form
